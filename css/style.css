@@ -1,0 +1,14 @@
+header {
+    font-size: 20px;
+    display: flex;
+    background-color: #6096B4;
+    height: 30px;
+    color: #EEE9DA;
+    align-items: center;
+}
+#logo {
+    justify-content: flex-start;
+}
+.nav {
+    justify-content: flex-end;
+}

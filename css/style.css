@@ -1,14 +1,49 @@
+body {
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
 header {
-    font-size: 20px;
     display: flex;
-    background-color: #6096B4;
-    height: 30px;
-    color: #EEE9DA;
     align-items: center;
 }
 #logo {
+    display: flex;
     justify-content: flex-start;
 }
-.nav {
+nav {
+    display: flex;
     justify-content: flex-end;
+}
+a {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+h1 {
+    font-size: 30px;
+    margin-right: 10%;
+}
+p {
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.facility {
+    display: flex;
+    flex-direction: row;
+}
+div {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

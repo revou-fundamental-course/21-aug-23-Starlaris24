@@ -7,43 +7,118 @@ header {
     display: flex;
     align-items: center;
 }
-#logo {
+#logoImg {
     display: flex;
     justify-content: flex-start;
+    height: 40px;
+    border: none;
 }
-nav {
+#navigation {
     display: flex;
     justify-content: flex-end;
+    font-size: 20px;
 }
 a {
-    font-size: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 40px;
     padding: 8px;
     border: 1px solid black;
-}
-
-h1 {
-    font-size: 30px;
-    margin-right: 10%;
-}
-p {
-    font-size: 20px;
 }
 
 section {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
-.facility {
-    display: flex;
-    flex-direction: row;
+h1 {
+    font-size: 30px;
+    margin-left: 7%;
+    margin-bottom: 0px;
 }
-div {
-    width: 150px;
+#description {
+    margin-left: 7%;
+    margin-top: 5px;
+}
+#homeImg {
+    width: 80%;
+    margin-left: 10%;
+}
+
+section.facility {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+div.facility {
+    width: 200px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+#facilityImg {
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    width: 175px;
+}
+p {
+    font-size: 20px;
+}
+
+form{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+div.form {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+label {
+    width: 150px;
+    font-size: 20px;
+}
+input {
+    height: 30px;
+    margin: 3px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+input#women, input#men {
+    width: 18px;
+    margin-right: 10px;
+}
+div.message {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    height: 130px;
+}
+textarea {
+    height: auto;
+    margin: 3px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+}
+input:focus, textarea:focus {
+    border: 2px solid #93BFCF;
+}
+#submit {
+    margin-top: 20px;
+    width: 400px;
 }

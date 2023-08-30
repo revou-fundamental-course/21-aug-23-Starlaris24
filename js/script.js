@@ -4,17 +4,16 @@ function replaceName() {
 }
 replaceName()
 
-function validateForm() {
+function submitForm(event) {
+    event.preventDefault();
     const name = document.forms["messageUs"]["name"].value;
     const email = document.forms["messageUs"]["email"].value;
     const phone = document.forms["messageUs"]["phone"].value;
     const birth = document.forms["messageUs"]["birth"].value;
     const gender = document.forms["messageUs"]["gender"].value;
-    const message = document.forms["messageUs"]["messagge"].value;
-
+    const message = document.forms["messageUs"]["messagge"].value;  
     if (name=="" || email=="" || phone=="" || birth=="" || gender=="" || message=="") {
         document.getElementById("error").innerHTML = "Please finish up the form before submitting.";
-        return false;
     }
     else {
         document.getElementById("senderName").innerHTML = "Full Name: " + name;
@@ -25,4 +24,6 @@ function validateForm() {
         document.getElementById("senderMessage").innerHTML = "Message: " + message;
     }
 }
+form.addEventListener("submit", submitForm);
+
 

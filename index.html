@@ -8,21 +8,21 @@
 </head>
 <body>
     <header>
-        <a href="" id="logo"><img src="./assets/Logo AIS.png" id="logoImg"></a>
+        <img src="./assets/Logo AIS.png" id="logoImg">
         <nav class="navigation">
-            <a href="">Home</a>
-            <a href="">Our Facilities</a>
-            <a href="">Message Us</a>
+            <a href="#home">Home</a>
+            <a href="#facilities">Our Facilities</a>
+            <a href="#message">Message Us</a>
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section id="home">
             <h1><span id="nickname"></span>Welcome to the website!</h1>
             <p id="description">This is my practice website</p>
             <img src="./assets/Sekolah.jpg" id="homeImg">
         </section>
 
-        <section class="Facilities">
+        <section id="facilities">
             <h1>Our Facilities</h1>
             <section class="facDetail">
                 <div class="facDetail">
@@ -56,7 +56,7 @@
             </section>
         </section>
 
-        <section class="message">
+        <section id="message">
             <h1>Message Us</h1>
             <section class="mesDetail">
                 <form name="messageUs">
@@ -81,7 +81,7 @@
                         <input id="women" type="radio" name="gender" value="women">
                         <label id="women" for="women">Women</label>
                         <input id="men" type="radio" name="gender" value="men">
-                        <label id="women" for="men">Men</label>
+                        <label id="men" for="men">Men</label>
                     </div>
                     <div class="message">
                         <label for="message">Message : </label>

@@ -22,10 +22,11 @@
             <p id="description">This is my practice website</p>
             <img src="./media/Sekolah 1.jpg" id="homeImg">
         </section>
-        <section>
+
+        <section class="Facilities">
             <h1>Our Facilities</h1>
-            <section class="facility">
-                <div class="facility">
+            <section class="facDetail">
+                <div class="facDetail">
                     <img id="facilityImg" src="./media/Classroom.JPG">
                     <p>Classroom</p>
                 </div>
@@ -55,49 +56,52 @@
                 </div>
             </section>
         </section>
+
         <section class="message">
             <h1>Message Us</h1>
-            <form name="messageUs">
-                <div class="form">
-                    <label for="name">Full Name : </label>
-                    <input id="name" type="text" placeholder="Name">
+            <section class="mesDetail">
+                <form name="messageUs">
+                    <div class="form">
+                        <label for="name">Full Name : </label>
+                        <input id="name" type="text" placeholder="Name">
+                    </div>
+                    <div class="form">
+                        <label for="email">Email : </label>
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="form">
+                        <label for="phone">Phone Number : </label>
+                        <input id="phone" type="number" placeholder="Phone Number">
+                    </div>
+                    <div class="form">
+                        <label for="birth">Date of Birth : </label>
+                        <input id="birth" type="date">
+                    </div>
+                    <div class="form">
+                        <label for="gender">Gender : </label>
+                        <input id="women" type="radio" name="gender" value="women">
+                        <label for="women">Women</label>
+                        <input id="men" type="radio" name="gender" value="men">
+                        <label for="men">Men</label>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message : </label>
+                        <textarea rows="10" cols="30"></textarea>
+                    </div>
+                    <div class="form">
+                        <input id="submit" type="submit" value="Submit">
+                    </div>
+                    <span id="error"></span>
+                </form>
+                <div>
+                    <span id="senderName"></span><br>
+                    <span id="senderEmail"></span><br>
+                    <span id="senderPhone"></span><br>
+                    <span id="senderBirth"></span><br>
+                    <span id="senderGender"></span><br>
+                    <span id="senderMessage"></span><br>
                 </div>
-                <div class="form">
-                    <label for="email">Email : </label>
-                    <input id="email" type="email" placeholder="Email">
-                </div>
-                <div class="form">
-                    <label for="phone">Phone Number : </label>
-                    <input id="phone" type="number" placeholder="Phone Number">
-                </div>
-                <div class="form">
-                    <label for="birth">Date of Birth : </label>
-                    <input id="birth" type="date">
-                </div>
-                <div class="form">
-                    <label for="gender">Gender : </label>
-                    <input id="women" type="radio" name="gender" value="women">
-                    <label for="women">Women</label>
-                    <input id="men" type="radio" name="gender" value="men">
-                    <label for="men">Men</label>
-                </div>
-                <div class="message">
-                    <label for="message">Message : </label>
-                    <textarea rows="10" cols="30"></textarea>
-                </div>
-                <div class="form">
-                    <input id="submit" type="submit" value="Submit">
-                </div>
-            </form>
-            <p id="error"></p>
-            <div>
-                <span id="senderName"></span><br>
-                <span id="senderEmail"></span><br>
-                <span id="senderPhone"></span><br>
-                <span id="senderBirth"></span><br>
-                <span id="senderGender"></span><br>
-                <span id="senderMessage"></span><br>
-            </div>
+            </section>
         </section>
     </main>
     <footer>created by: arisarae24</footer>
